@@ -14,7 +14,7 @@
 					<?php } ?>
 
 					<li><a href="my-account.php"><i class="icon fa fa-user"></i>Cuenta</a></li>
-					<?php if (strlen($_SESSION['login']) == 0) {   ?>
+					<?php if (strlen($_SESSION['login']) == 0) {   ?><span class="key">Rastrear orden</span>
 						<li><a href="login.php"><i class="icon fa fa-sign-in"></i>Login</a></li>
 					<?php } else { ?>
 
@@ -23,16 +23,7 @@
 				</ul>
 			</div><!-- /.cnt-account -->
 
-			<div class="cnt-block">
-				<ul class="list-unstyled list-inline">
-					<li class="dropdown dropdown-small">
-						<a href="track-orders.php" class="dropdown-toggle"><span class="key">Rastrear orden</b></a>
-
-					</li>
-
-
-				</ul>
-			</div>
+		
 
 			<div class="clearfix"></div>
 		</div><!-- /.header-top-inner -->
